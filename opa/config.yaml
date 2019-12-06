@@ -1,0 +1,11 @@
+services:
+  test:
+    url: https://storage.googleapis.com/bundles-5h7d/
+
+bundles:
+  example:
+    service: test
+    resource: examples.tar.gz
+    polling:
+      min_delay_seconds: 60
+      max_delay_seconds: 120
